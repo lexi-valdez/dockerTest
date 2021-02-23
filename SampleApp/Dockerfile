@@ -1,5 +1,5 @@
 FROM node:12.16.1-alpine as builder
-WORKDIR usr/src/app
+WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
